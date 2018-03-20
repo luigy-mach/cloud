@@ -55,6 +55,9 @@ root@slave2:~# exit
 
 
 root@slave2:~# clean-hdfs.sh
+
 root@slave2:~# start-hadoop.sh
+
 root@slave2:~# start-spark.sh
+
 
