@@ -1,4 +1,4 @@
-#Crear una red en docker con el nombre de "hadoop"
+# Crear una red en docker con el nombre de "hadoop"
 
 sudo docker network create hadoop
 
