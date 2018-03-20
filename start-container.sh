@@ -2,8 +2,10 @@
 
 # the default node number is 3
 var=${1:-2}
-dockerImage="cluster-luigy-2.2:16.04"
+#dockerImage="cluster-luigy-2.2:16.04"
+dockerImage="luigymach/cluster-spark-hadoop:2.0.4"
 dockerNet="hadoop"
+#sudo docker network create -d brigde hadoop
 
 mydir=$(pwd)
 # start hadoop master container
@@ -37,13 +39,6 @@ sudo docker run -itd \
 
                 #spark://master:7077
                                 #spark://master:6066 (cluster mode)
-
-
-
-#sudo docker run -itd --net=homenet --ip 192.168.1.201 --add-host slave1:192.168.1.202 --name master --hostname master  cluster-luigy-2.2:16.04  &> /dev/null
-#sudo docker exec -it master bash
-
- #&> /dev/null
 
 
 #echo "start SLAVES container..."
