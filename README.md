@@ -1,15 +1,18 @@
-#Crear una red en docker con el nombre de "hadoop"
-
+## Crear una red en docker con el nombre de "hadoop"
+```
 sudo docker network create hadoop
+```
 
 
-#Ejecutar 
-
+## Ejecutar 
+```
 ./start-container.sh
+```
 
 
-#Dentro de la maquina virtual ejecutar
+## Dentro de la maquina virtual ejecutar
 
+```
 
 root@master:~# ifconfig
 		eth0      Link encap:Ethernet  HWaddr 02:42:ac:12:00:02  
@@ -55,6 +58,10 @@ root@slave2:~# exit
 
 
 root@slave2:~# clean-hdfs.sh
+
 root@slave2:~# start-hadoop.sh
+
 root@slave2:~# start-spark.sh
+
+```
 
