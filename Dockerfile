@@ -10,5 +10,5 @@ WORKDIR /root
 #RUN apt-get install -y --no-install-recommends apt-utils 
 
 RUN apt-get install -y --no-install-recommends update 
-RUN apt-get install -y --no-install-recommends upgrade 
+
 
