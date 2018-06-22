@@ -241,12 +241,12 @@ root@master:~#
 ```
 
 
-> NOTA 2: Cluster por defecto tiene `(2)slaves`, para hacer un resize ejecutar lo siguiente **resize-cluster-gpu.sh N**, donde N es el nuevo de slaves requeridos.
+> NOTA 2: Cluster por defecto tiene `(2)slaves`, para hacer un resize ejecutar lo siguiente **resize-cluster.sh N**, donde N es el nuevo de slaves requeridos.
 
 
 - Ejemplo1: **Master** resize (3)slaves
 ```console
-root@master:~# ./resize-cluster-gpu.sh 3
+root@master:~# ./resize-cluster.sh 3
              
   > generate masters_file
   > generate slaves_file
@@ -267,7 +267,7 @@ root@master:~#
 
 - Ejemplo2: **Master** resize (4)slaves
 ```console
-root@master:~# ./resize-cluster-gpu.sh 4
+root@master:~# ./resize-cluster.sh 4
              
   > generate masters_file
   > generate slaves_file
